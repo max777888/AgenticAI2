@@ -1,0 +1,29 @@
+AGENTIC AI
+https://cloud.google.com/vertex-ai/generative-ai/docs/agent-engine/develop/adk
+
+pip install google-adk
+
+adk run main
+
+adk web 
+
+
+download google cloud installer
+
+--- > gcloud auth application-default login
+
+This command will open a browser window and prompt you to log in to your Google account. It will then generate a local credentials file (application_default_credentials.json) that ADK can find automatically
+
+The gcloud command creates a credentials file and stores it in a well-known location on your system (e.g., %APPDATA%\gcloud on Windows).
+When your ADK application starts and sees GOOGLE_GENAI_USE_VERTEXAI=1 in your .env file, it looks for ADC credentials.
+The Google authentication libraries find the credentials file that gcloud created and use it to get a temporary access token for your specified project.
+Your application is now successfully authenticated and can communicate with the Vertex AI API in your GCP project
+
+--- > gcloud config set project YOUR_PROJECT_ID
+
+--- > gcloud auth application-default set-quota-project [YOUR_PROJECT_ID]
+
+
+C:\Users\samna\WORK\agenticAI\ExchangeAgent>adk run main
+
+for web ui use adk run web.

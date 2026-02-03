@@ -1,0 +1,4 @@
+{
+    "POL-991": {"holder": "Sam", "coverage": 5000, "status": "Active", "deductible": 500},
+    "POL-123": {"holder": "Alex", "coverage": 15000, "status": "Suspended", "deductible": 1000}
+}
