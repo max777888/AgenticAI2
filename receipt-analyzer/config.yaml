@@ -1,0 +1,8 @@
+receipts_dir: sample_receipts
+output_excel: receipts_output.xlsx
+ollama_model: llama2
+ollama_cmd: ollama
+ollama_timeout: 30
+max_workers: 4
+tesseract_cmd: null
+log_level: INFO

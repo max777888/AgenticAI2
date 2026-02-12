@@ -1,4 +1,0 @@
-langgraph
-langchain_ollama
-chromadb
-langchain_core
