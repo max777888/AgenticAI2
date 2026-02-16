@@ -1,13 +1,14 @@
-from pydantic import BaseSettings, Field
+from pydantic_settings import BaseSettings
+from pydantic import Field
 from pathlib import Path
 from typing import Optional
 
 class Settings(BaseSettings):
-    receipts_dir: Path = Field(default=Path("sample_receipts"))
+    receipts_dir: Path = Field(default=Path("../sample_receipts"))
     output_excel: Path = Field(default=Path("receipts_output.xlsx"))
     ollama_model: str = Field(default="llama2")
     ollama_cmd: str = Field(default="ollama")
-    ollama_timeout: int = Field(default=30)
+    ollama_timeout: int = Field(default=300)
     max_workers: int = Field(default=4)
     tesseract_cmd: Optional[str] = Field(default=None)
     log_level: str = Field(default="INFO")

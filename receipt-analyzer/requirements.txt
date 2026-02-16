@@ -1,9 +1,19 @@
-pillow==10.0.0
-opencv-python-headless==4.8.0.76
-pytesseract==0.3.11
-pandas==2.2.0
-openpyxl==3.1.2
-pyyaml==6.0
-pydantic==2.3.0
-python-dotenv==1.0.0
-pytest==7.4.0
+pillow>=11.0.0              # or just pillow (latest)
+opencv-python-headless>=4.10.0  # or latest
+pytesseract>=0.3.13         # small bump, safer
+pandas>=2.2.3               # 2.2.3 was first with good 3.13 support
+openpyxl>=3.1.5             # newer patch releases usually fix compatibility
+pyyaml>=6.0
+pydantic>=2.3.0             # or latest
+python-dotenv>=1.0.0
+pytest>=7.4.0               # or latest
+pydantic-settings
+# pillow==10.0.0
+# opencv-python-headless==4.8.0.76
+# pytesseract==0.3.11
+# pandas==2.2.0
+# openpyxl==3.1.2
+# pyyaml==6.0
+# pydantic==2.3.0
+# python-dotenv==1.0.0
+# pytest==7.4.0
