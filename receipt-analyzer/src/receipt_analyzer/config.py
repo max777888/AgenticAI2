@@ -6,7 +6,7 @@ from typing import Optional
 class Settings(BaseSettings):
     receipts_dir: Path = Field(default=Path("../sample_receipts"))
     output_excel: Path = Field(default=Path("receipts_output.xlsx"))
-    ollama_model: str = Field(default="llama2")
+    ollama_model: str = Field(default="llama3.2:3b")
     ollama_cmd: str = Field(default="ollama")
     ollama_timeout: int = Field(default=300)
     max_workers: int = Field(default=4)
